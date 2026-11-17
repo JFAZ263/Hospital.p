@@ -36,20 +36,60 @@
         <br><br>
         <label for="tipo-sangre">Tipo de sangre:</label>
         <br><br>
-<select id="tipo-sangre" name="tipo_sangre" required>
-  <option value="" disabled selected>Seleccione una opción</option>
-  <option value="A+">A+</option>
-  <option value="A-">A-</option>
-  <option value="B+">B+</option>
-  <option value="B-">B-</option>
-  <option value="AB+">AB+</option>
-  <option value="AB-">AB-</option>
-  <option value="O+">O+</option>
-  <option value="O-">O-</option>
-</select> 
+        <select id="tipo-sangre" name="tipo_sangre" required>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select> 
         <br><br>
         <label for="genero">Género</label>
         <label for="Masculino"><input type="radio" id="Masculino" name="genero" value="Masculino">Masculino</label>
         <label for="Femenino"><input type="radio" id="Femenino" name="genero" value="Femenino">Femenino</label>
-</body><br>
+        <br><br>
+        <label for="email">Ingrese su correo electrónico:</label>
+        <br><br>
+        <input type="email" id="email" placeholder="Tu e-mail" size="15" required>
+        <br><br>
+        <label for="contraseña">Ingrese su contraseña:</label>
+        <br><br>
+        <input type="password" id="contraseña" placeholder="Tu contraseña aquí." size="15" required>
+        <br><br>
+        <label for="telef">Ingrese su número de teléfono:</label>
+        <br><br>
+        <input type="tel" id="telef" placeholder="+593-999-999" size="15" required>
+        <br><br>
+        <label for="alergias">¿Tiene alguna alergia?, escribala aquí, de lo contrario omitir este campo:</label>
+        <br><br>
+        <textarea name="comentarios" id="alergias" rows="5" cols="50" placeholder="Alergias"></textarea>
+        <br><br>
+        <label for="pets">¿tiene mascotas?¿cuantas?si no poner "0":</label>
+        <br><br>
+        <input type="number" id="pets" min="0">
+        <br><br>
+        <label for="fotos">Si comsume medicamentos, suba una foto de la receta medica:</label>
+        <br><br>
+        <input type="file" name="fotos" id="fotos">
+        <br><br>
+        <label>¿Qué tanto miedo tienes a las inyecciones?
+            <br>
+            <sub>la izquierda es 0 y todo a la derecha es 10</sub></label>
+            <br><br>
+        <input type="range" min="0" max="10">
+        <br><br>
+        <label for="hora">¿Cuándo fue tu última visita al médico?</label>
+        <br>
+        <P><sub>Ingresar fecha y hora</sub></P>
+        <br>
+        <input type="datetime-local" id="hora">
+        <br><br>
+        <label for="mes">¿En qué mes prefieres hacerte un chequeo?</label>
+        <br><br>
+        <input type="month" id="mes" required>
+</body>
 </html>
